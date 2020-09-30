@@ -1,0 +1,46 @@
+// color
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Spartan", sans-serif;
+  font-size: 75%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+img:not(.logo1) {
+  display: block;
+  width: 100%;
+}
+$DarkGray: #a1a1a1;
+$Black: #000000;
+$White: #ffffff;
+$DarkGray2: #454545;
+
+@mixin fontsize {
+  @media only screen and (min-width: 32em) {
+    @content;
+  }
+}
+
+@mixin respond2 {
+  @media only screen and (min-width: 40em) {
+    @content;
+  }
+}
+
+@mixin respond {
+  @media only screen and (min-width: 50em) {
+    @content;
+  }
+}
